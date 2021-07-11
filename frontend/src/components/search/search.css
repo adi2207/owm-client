@@ -1,0 +1,14 @@
+.search-container{
+    width: 80%;
+    height: 100vh;
+    margin: 10%;
+}
+
+.search-input {
+  width: 50%;
+  border: 1px solid #1C76D2;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  margin: 10px;
+}
