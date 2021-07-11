@@ -1,16 +1,15 @@
-package com.hsbc.testbackend;
+package com.adp.owmclient;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
 public class CityService {
 
-	public int findMatchingCities(String prefix) throws ParseException {
+	public int findMatchingCities(String prefix) {
 		CityResponse cityResponse = getAllCities();
 		
 		List<City> matchingCities = cityResponse.getCities().stream()
