@@ -1,29 +1,29 @@
-# HSBC Test 
+# OWM Client
 
-Generate count of cities starting with a given letter
+Generate count of cities starting with a given letter.
 
 ## Prerequisites
 
-- Make sure Java 8 or higher is installed configured into Environment variable.
-- Make sure to install maven and configure into Environment variable.
-- Make sure to install Node and configure into Environment variable.
+- Java 8 or higher
+- Maven
+- Tomcat / Eclipse
+- Node v12.13.0+
 
 ## Getting Started
 
-- Once you have cloned the repository, you need to start the backend server by importing the hsbc-be/test-backend project in eclipse IDE. 
+- Fork the repository.
+- Start the backend server.
+- For eclipse users: Setup any open port in application.properties (default 8083), Click Run As > Java Application.
+- For tomcat users: Generate war by `mvn package` command in backend folder, copy it in tomcat directory and setup connection port in config file.
+- Server can be access through the configured url default: http://localhost:<port>
 
-- Right-click on TestBackendApplication.java
-Run As > Java Application
-
-- Runs the backend server on http://localhost:8083
-
-- To start the frontend service, you need to first run `npm install` from the hsbc-fe project root directory. This will install all of the dependencies for you, once this is complete you can run the application by running `npm start`.
+- Start the frontend serve
+- Run `npm install` in frontend directory to install all the dependencies.
+- Run `npm start` to bring up the applicaiton.
 
 - Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-- The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- For dev environment you can setup the backend server url in proxy in package.json. (default:http://localhost:8083)
 
 ## Authors
 
