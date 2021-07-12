@@ -15,7 +15,7 @@ Generate count of cities starting with a given letter.
 - Start the backend server.
 - For eclipse users: Setup any open port in application.properties (default 8083), Click Run As > Java Application.
 - For tomcat users: Generate war by `mvn package` command in backend folder, copy it in tomcat directory and setup connection port in config file.
-- Server can be access through the configured url default: http://localhost:<port>
+- Server can be access through the configured url default: http://localhost:*<<port>>*
 
 - Start the frontend serve
 - Run `npm install` in frontend directory to install all the dependencies.
